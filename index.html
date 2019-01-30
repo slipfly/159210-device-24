@@ -17,106 +17,134 @@
           <li class="cart-btn"><a href="#">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <li class="open-item-list-btn"><a href="#">Каталог товаров</a></li>
-          <!-- menu -->
+          <li class="open-item-list-btn"><a href="#">Каталог товаров</a>
+            <ul class="index-sub-menu sub-menu-first">
+              <li class="sub-menu-common">
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li class="sub-menu-common">
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li class="sub-menu-common">
+                <a href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="index-sub-menu sub-menu-second">
+              <li class="sub-menu-common">
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="sub-menu-common">
+                <a href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="index-sub-menu sub-menu-third">
+              <li class="sub-menu-common">
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Магазин гаджетов Device</h1>
-      <section class="slider-wrapper">
-        <input type="radio" value="1" name="toggle" id="slider1" checked>
-        <input type="radio" value="2" name="toggle" id="slider2">
-        <input type="radio" value="3" name="toggle" id="slider3">
-        <article class="slider-and-promo-btn" id="slide1">
+      <section class="promo-slider">
+        <input type="radio" value="1" name="promo-changer" id="slider1" checked>
+        <input type="radio" value="2" name="promo-changer" id="slider2">
+        <input type="radio" value="3" name="promo-changer" id="slider3">
+        <section class="promo-slide" id="slide1">
           <img src="selfiestick.png" alt="Самая длинная палка для селфи" width="100" height="100">
-          <h1>Делай селфи, как Бен Стиллер!</h1>
+          <h2>Делай селфи, как Бен Стиллер!</h2>
           <p>
             Самая длинная палка для селфи доступна в нашем магазине <br>
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм
           </p>
-          <a class="see-more-bth main-button" href="#">Подробнее</a>
+          <a class="promo-slide-bth main-button" href="#">Подробнее</a>
           <table class="slider-item-parameters">
-            <tr class="slider-item-parameters-value">
+            <tr>
               <td>8,5 м</td>
               <td>5 кг</td>
               <td>Карбон</td>
             </tr>
-            <tr class="slider-item-parameters-name">
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
+            <tr>
+              <th>Длина палки</th>
+              <th>Вес палки</th>
+              <th>Материал</th>
             </tr>
           </table>
-        </article>
-        <article class="slider-and-promo-btn" id="slide2">
+        </section>
+        <section class="promo-slide" id="slide2">
           <img src="fitness-bracelet.png" alt="Фитнес-браслет" width="100" height="100">
-          <h1>Худеем правильно!</h1>
+          <h2>Худеем правильно!</h2>
           <p>
             Мотивирующие фитнес-браслеты помогут найти в себе силы
             не пропускать занятия и соблюдать диету.
           </p>
-          <a class="see-more-bth main-button" href="#">Подробнее</a>
+          <a class="promo-slide-bth main-button" href="#">Подробнее</a>
           <table class="slider-item-parameters">
-            <tr class="slider-item-parameters-value">
+            <tr>
               <td>48 часов</td>
             </tr>
-            <tr class="slider-item-parameters-name">
-              <td>Без подзарядки</td>
+            <tr>
+              <th>Без подзарядки</th>
             </tr>
           </table>
-        </article>
-        <article class="slider-and-promo-btn" id="slide3">
+        </section>
+        <section class="promo-slide" id="slide3">
           <img src="quadrocopter.png" alt="Квадрокоптер" width="100" height="100">
-          <h1>Порхает как бабочка, жалит как пчела!</h1>
+          <h2>Порхает как бабочка, жалит как пчела!</h2>
           <p>
             Этот обычный, на первый взгляд, квадрокоптер оснащен
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a class="see-more-bth main-button" href="#">Подробнее</a>
+          <a class="promo-slide-bth main-button" href="#">Подробнее</a>
           <table class="slider-item-parameters">
-            <tr class="slider-item-parameters-value">
+            <tr>
               <td>800 м</td>
               <td>50 м</td>
             </tr>
-            <tr class="slider-item-parameters-name">
-              <td>Дальность полета</td>
-              <td>Радиус поражения</td>
+            <tr>
+              <th>Дальность полета</th>
+              <th>Радиус поражения</th>
             </tr>
           </table>
-        </article>
+        </section>
       </section>
       <section class="popular-itemgroups">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-itemgroups-list">
-          <li><a class="popular-itemgroups-btn" href="#">Виртуальная реальность</a></li>
-          <li><a class="popular-itemgroups-btn" href="#">Моноподы для селфи</a></li>
-          <li><a class="popular-itemgroups-btn" href="#">Экшн-камеры</a></li>
-          <li><a class="popular-itemgroups-btn" href="#">Фитнес-браслеты</a></li>
-          <li><a class="popular-itemgroups-btn" href="#">Умные часы</a></li>
-          <li><a class="popular-itemgroups-btn" href="#">Квадрокоптеры</a></li>
+          <li><a class="popular-itemgroups-link" href="#">Виртуальная реальность</a></li>
+          <li><a class="popular-itemgroups-link" href="#">Моноподы для селфи</a></li>
+          <li><a class="popular-itemgroups-link" href="#">Экшн-камеры</a></li>
+          <li><a class="popular-itemgroups-link" href="#">Фитнес-браслеты</a></li>
+          <li><a class="popular-itemgroups-link" href="#">Умные часы</a></li>
+          <li><a class="popular-itemgroups-link" href="#">Квадрокоптеры</a></li>
         </ul>
       </section>
       <section class="services">
-        <input type="radio" value="delivery" name="toggle" id="services1" checked> Доставка
-        <input type="radio" value="warranty" name="toggle" id="services2"> Гарантия
-        <input type="radio" value="credit" name="toggle" id="services3"> Кредит
-        <section class="services-delivery" id="service1">
+        <label for="services1">Доставка</label>
+        <label for="services2">Гарантия</label>
+        <label for="services3">Кредит</label>
+        <input type="radio" value="delivery" name="services-changer" id="services1" checked>
+        <input type="radio" value="warranty" name="services-changer" id="services2">
+        <input type="radio" value="credit" name="services-changer" id="services3">
+        <section class="services-slide services-delivery" id="service1">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо
              к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
              поднимая его на ваш этаж.</p>
         </section>
-        <section class="services-warranty" id="service2">
+        <section class="services-slide services-warranty" id="service2">
           <h3>Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит
-             дом — не переживайте, мы выдадим вам новый. <br>
+             дом — не переживайте, мы выдадим вам новый.
              Товар, не дом, конечно же.</p>
         </section>
-        <section class="services-credit" id="service3">
+        <section class="services-slide services-credit" id="service3">
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные
              консультанты подберут для вас наиболее выгодные
@@ -145,7 +173,9 @@
         <h3>Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
            проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="map.jpg" alt="Карта" width="100" height="100">
+        <a href="#">
+          <img src="map.jpg" alt="Карта" width="100" height="100">
+        </a>
         <a href="#" class="feedback-btn main-button">Напишите нам</a>
       </section>
     </main>
@@ -160,13 +190,13 @@
           <li class="cart-btn"><a href="#">Корзина</a></li>
         </ul>
         <ul class="footer-site-navigation">
+          <li class="footer-address">г. Москва, ул. Строителей, 15</li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
+          <li class="footer-phone">Тел.: +7 (495) 495-95-95</li>
         </ul>
       </nav>
-      <p>г. Москва, ул. Строителей, 15</p>
-      <p>Тел.: +7 (495) 495-95-95</p>
       <section class="footer-social">
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
