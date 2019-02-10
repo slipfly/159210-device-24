@@ -13,7 +13,8 @@
         <ul class="user-navigation">
           <li>
             <form class="searching" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden"><input type="text" class="search-field" placeholder="Поиск">Поиск</label>
+              <label class="visually-hidden" for="search-field">Поиск</label>
+              <input type="text" class="search-field" id="search-field" placeholder="Поиск">
               <button type="submit" class="search-btn">Найти</button>
             </form>
           </li>
@@ -72,10 +73,13 @@
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Стоимость</legend>
+          <div class="price-range-bg"></div>
+          <div class="price-range-bar-empty"></div>
+          <div class="price-range-bar-full"></div>
           <span>от </span>
-          <span class="custom-min-price">0</span>
+          <input type="number" class="custom-min-price" value="0">
           <span>до </span>
-          <span class="custom-max-price">5000</span>
+          <input type="number" class="custom-max-price" value="5000">
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
@@ -120,24 +124,40 @@
       <section class="items">
         <h2 class="visually-hidden">Список товаров</h2>
         <section class="device">
+          <div class="buy-compare">
+            <button class="main-button">В корзину</button>
+            <button class="add-to-compare-btn">Добавить к сравнению</button>
+          </div>
           <img class="device-pic" src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
           <h2 class="device-name"><a href="#">Любительская селфи-палка</a></h2>
           <span class="device-price">500 руб.</span>
         </section>
 
         <section class="device">
+          <div class="buy-compare">
+            <button class="main-button">В корзину</button>
+            <button class="add-to-compare-btn">Добавить к сравнению</button>
+          </div>
           <img class="device-pic" src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
           <h2 class="device-name"><a href="#">Профессиональная селфи-палка</a></h2>
           <span class="device-price">1500 руб.</span>
         </section>
 
         <section class="device">
+          <div class="buy-compare">
+            <button class="main-button">В корзину</button>
+            <button class="add-to-compare-btn">Добавить к сравнению</button>
+          </div>
           <img class="device-pic" src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
           <h2 class="device-name"><a href="#">Непотопляемая селфи-палка</a></h2>
           <span class="device-price">2500 руб.</span>
         </section>
 
         <section class="device device-new">
+          <div class="buy-compare">
+            <button class="main-button">В корзину</button>
+            <button class="add-to-compare-btn">Добавить к сравнению</button>
+          </div>
           <img class="device-pic" src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
           <h2 class="device-name"><a href="#">Селфи-палка «Следуй за мной»</a></h2>
           <span class="device-price">4900 руб.</span>
