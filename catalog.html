@@ -2,20 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Device: catalog</title>
+    <title>Device</title>
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" alt="Device logo" width="163" height="35">
+          <img src="img/logo.svg" alt="Логотип магазина Device" width="163" height="35">
         </a>
         <ul class="user-navigation">
-          <!-- searching form -->
-          <li class="account-link"><a href="#">Валентин Петухов</a></li>
-          <li class="logout-link">Выйти</li>
-          <li class="compare-btn"><a href="#">Сравнить</a></li>
-          <li class="cart-btn"><a href="#">Корзина</a></li>
+          <li>
+            <form class="searching" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden"><input type="text" class="search-field" placeholder="Поиск">Поиск</label>
+              <button type="submit" class="search-btn">Найти</button>
+            </form>
+          </li>
+          <li><a class="account-link" href="#">Валентин Петухов</a></li>
+          <li><a class="logout-link" href="#">Выйти</a></li>
+          <li><a class="compare-btn" href="#">Сравнить</a></li>
+          <li><a class="cart-btn" href="#">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
           <li class="open-item-list-btn"><a href="#">Каталог товаров</a>
@@ -64,8 +69,56 @@
           <li class="breadcrumbs-item active">Моноподы для селфи</li>
         </ul>
       </section>
-      <!-- customization form -->
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <span>от </span>
+          <span class="custom-min-price">0</span>
+          <span>до </span>
+          <span class="custom-max-price">5000</span>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul class="sort-color">
+            <li>
+              <input type="checkbox" name="black" id="black" checked>
+              <label for="black">Черный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="white" id="white">
+              <label for="white">Белый</label>
+            </li>
+            <li>
+              <input type="checkbox" name="blue" id="blue" checked>
+              <label for="blue">Синий</label>
+            </li>
+            <li>
+              <input type="checkbox" name="red" id="red" checked>
+              <label for="red">Красный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="pink">
+              <label for="pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul class="sort-bluetooth">
+            <li>
+              <input type="radio" name="bluetooth" id="included" value="included" checked>
+              <label for="included">Есть</label>
+            </li>
+            <li>
+              <input type="radio" name="bluetooth" id="not-included" value="not-included">
+              <label for="not-included">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="main-button">Показать</button>
+      </form>
       <section class="items">
+        <h2 class="visually-hidden">Список товаров</h2>
         <section class="device">
           <img class="device-pic" src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
           <h2 class="device-name"><a href="#">Любительская селфи-палка</a></h2>
@@ -105,13 +158,13 @@
     <footer class="main-footer">
       <div class="footer-container">
         <a class="main-footer-logo">
-          <img src="img/logo.svg" alt="Device logo" width="163" height="35">
+          <img src="img/logo.svg" alt="Логотип магазина Device" width="163" height="35">
         </a>
         <ul class="footer-user-navigation">
-          <li class="account-link"><a href="#">Валентин Петухов</a></li>
-          <li class="logout-link">Выйти</li>
-          <li class="compare-btn"><a href="#">Сравнить</a></li>
-          <li class="cart-btn"><a href="#">Корзина</a></li>
+          <li><a class="account-link" href="#">Валентин Петухов</a></li>
+          <li><a class="logout-link" href="#">Выйти</a></li>
+          <li><a class="compare-btn" href="#">Сравнить</a></li>
+          <li><a class="cart-btn" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="footer-container">
@@ -125,25 +178,16 @@
       </div>
       <div class="footer-container">
         <section class="footer-social">
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+          <h2 class="visually-hidden">Device в социальных сетях</h2>
+          <a class="social-btn social-btn-fb" href="#">Device на Фейсбуке</a>
+          <a class="social-btn social-btn-inst" href="#">Device в Инстаграм</a>
+          <a class="social-btn social-btn-tw" href="#">Device в Твиттере</a>
         </section>
         <section class="footer-copyright">
+          <h2 class="visually-hidden">Сайт разработан</h2>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
     </footer>
-    <section class="modal-content-feedback">
-      <button class="modal-content-close" type="button" title="Закрыть">
-        Закрыть
-      </button>
-      <!-- feedback form -->
-    </section>
-    <section class="index-map">
-      <div class="map-script">
-        <!-- map api -->
-      </div>
-    </section>
   </body>
 </html>

@@ -8,13 +8,18 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo.svg" alt="Device logo" width="163" height="35">
+          <img src="img/logo.svg" alt="Логотип магазина Device" width="163" height="35">
         </a>
         <ul class="user-navigation">
-          <!-- searching form -->
-          <li class="login-link">Войти</li>
-          <li class="compare-btn"><a href="#">Сравнить</a></li>
-          <li class="cart-btn"><a href="#">Корзина</a></li>
+          <li>
+            <form class="searching" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden"><input type="text" class="search-field" placeholder="Поиск">Поиск</label>
+              <button type="submit" class="search-btn">Найти</button>
+            </form>
+          </li>
+          <li><a class="login-link" href="login.html">Войти</a></li>
+          <li><a class="compare-btn" href="#">Сравнить</a></li>
+          <li><a class="cart-btn" href="#">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
           <li class="open-item-list-btn"><a href="#">Каталог товаров</a>
@@ -53,12 +58,13 @@
     <main>
       <h1 class="visually-hidden">Магазин гаджетов Device</h1>
       <section class="promo-slider">
+        <h2 class="visually-hidden">Специальное предложение</h2>
         <input type="radio" value="1" name="promo-changer" id="slider1" checked>
         <input type="radio" value="2" name="promo-changer" id="slider2">
         <input type="radio" value="3" name="promo-changer" id="slider3">
         <section class="promo-slide" id="slide1">
           <img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486">
-          <h2>Делай селфи, как Бен Стиллер!</h2>
+          <h3>Делай селфи, как Бен Стиллер!</h3>
           <p>
             Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм
@@ -79,7 +85,7 @@
         </section>
         <section class="promo-slide" id="slide2">
           <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
-          <h2>Худеем правильно!</h2>
+          <h3>Худеем правильно!</h3>
           <p>
             Мотивирующие фитнес-браслеты помогут найти в себе силы
             не пропускать занятия и соблюдать диету.
@@ -96,7 +102,7 @@
         </section>
         <section class="promo-slide" id="slide3">
           <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
-          <h2>Порхает как бабочка, жалит как пчела!</h2>
+          <h3>Порхает как бабочка, жалит как пчела!</h3>
           <p>
             Этот обычный, на первый взгляд, квадрокоптер оснащен
             мощным лазером, замаскированным под стандартную камеру.
@@ -126,6 +132,7 @@
         </ul>
       </section>
       <section class="services">
+        <h2 class="visually-hidden">Наши услуги</h2>
         <label for="services1">Доставка</label>
         <label for="services2">Гарантия</label>
         <label for="services3">Кредит</label>
@@ -151,11 +158,12 @@
              условия кредита. Выгодные для нашего банка, разумеется.</p>
         </section>
       </section>
-      <section class="partners">
-        <a href="#"><img src="img/logo-1.jpg" alt="DJI logo" width="260" height="100"></a>
-        <a href="#"><img src="img/logo-2.jpg" alt="SPGadgets logo" width="260" height="100"></a>
-        <a href="#"><img src="img/logo-3.jpg" alt="GoPro logo" width="260" height="100"></a>
-        <a href="#"><img src="img/logo-4.jpg" alt="VIVE logo" width="260" height="100"></a>
+      <section class="brands">
+        <h2 class="visually-hidden">Популярные брэнды</h2>
+        <a href="#"><img src="img/logo-1.jpg" alt="Логотип DJI" width="260" height="100"></a>
+        <a href="#"><img src="img/logo-2.jpg" alt="Логотип SPGadgets" width="260" height="100"></a>
+        <a href="#"><img src="img/logo-3.jpg" alt="Логотип GoPro" width="260" height="100"></a>
+        <a href="#"><img src="img/logo-4.jpg" alt="Логотип VIVE" width="260" height="100"></a>
       </section>
       <section class="about-us">
         <h3>О нас</h3>
@@ -174,7 +182,7 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
            проверить работоспособность покупки. Всякое бывает.</p>
         <a href="#">
-          <img src="img/map.jpg" alt="Карта" width="560" height="222">
+          <img src="img/map.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва" width="560" height="222">
         </a>
         <a href="#" class="feedback-btn main-button">Напишите нам</a>
       </section>
@@ -182,12 +190,12 @@
     <footer class="main-footer">
       <div class="footer-container">
         <a class="main-footer-logo">
-          <img src="img/logo.svg" alt="Device logo" width="163" height="35">
+          <img src="img/logo.svg" alt="Логотип магазина Device" width="163" height="35">
         </a>
         <ul class="footer-user-navigation">
-          <li class="login-link">Войти</li>
-          <li class="compare-btn"><a href="#">Сравнить</a></li>
-          <li class="cart-btn"><a href="#">Корзина</a></li>
+          <li><a class="login-link" href="login.html">Войти</a></li>
+          <li><a class="compare-btn" href="#">Сравнить</a></li>
+          <li><a class="cart-btn" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="footer-container">
@@ -201,11 +209,13 @@
       </div>
       <div class="footer-container">
         <section class="footer-social">
+          <h2 class="visually-hidden">Device в социальных сетях</h2>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
         </section>
         <section class="footer-copyright">
+          <h2 class="visually-hidden">Сайт разработан</h2>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
@@ -214,9 +224,19 @@
       <button class="modal-content-close" type="button" title="Закрыть">
         Закрыть
       </button>
-      <!-- feedback form -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <label for="user-name">Ваше имя:</label>
+        <input id="user-name" type="text" name="user-name" value="" placeholder="Имя Фамилия">
+        <label for="user-mail">Ваш e-mail:</label>
+        <input id="user-mail" type="email" name="user-mail" value="" placeholder="email@example.com">
+        <label for="feedback-text">Текст письма:</label>
+        <textarea id="feedback-text" name="feedback-text" rows="5" placeholder="В свободной форме"></textarea>
+        <button class="main-button" type="submit">Отправить</button>
+      </form>
     </section>
     <section class="index-map">
+      <h2 class="visually-hidden">Расположение офиса на карте</h2>
       <div class="map-script">
         <!-- map api -->
       </div>
