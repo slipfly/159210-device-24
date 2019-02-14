@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/web/opensanslight.woff") format("woff"),
+       url("../fonts/web/opensanslight.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/web/opensans.woff") format("woff"),
+       url("../fonts/web/opensans.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../fonts/web/gilroylight.woff") format("woff"),
+      url("../fonts/web/gilroylight.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url("../fonts/web/gilroyextrabold.woff") format("woff"),
+      url("../fonts/web/gilroyextrabold.woff2") format("woff2");
+  font-weight: 800;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -69,4 +97,36 @@ a {
   background-color: #F7E397;
 
   border: 2px solid #000000;
+}
+
+.promo-slide h3 {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.promo-slide p {
+  color: #464646;
+}
+
+.main-button {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.slider-item-parameters th {
+  color: #464646;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.slider-item-parameters td {
+  font-family: "Gilroy Light", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px
+  text-align: left;
 }
