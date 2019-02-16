@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Device</title>
+    <link href="fonts/web/opensans.woff" rel="stylesheet">
+    <link href="fonts/web/opensanslight.woff" rel="stylesheet">
+    <link href="fonts/web/gilroylight.woff" rel="stylesheet">
+    <link href="fonts/web/gilroyextrabold.woff" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -58,7 +64,7 @@
       </nav>
     </header>
     <main class="container">
-      <h1>Монопод для селфи</h1>
+      <h1>Моноподы для селфи</h1>
       <section class="breadcrumbs-block">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -70,55 +76,68 @@
           <li class="breadcrumbs-item active">Моноподы для селфи</li>
         </ul>
       </section>
-      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend>Стоимость</legend>
-          <div class="price-range-bg"></div>
-          <div class="price-range-bar-empty"></div>
-          <div class="price-range-bar-full"></div>
-          <label>от <input type="number" class="custom-min-price" value="0"></label>
-          <label>до <input type="number" class="custom-max-price" value="5000"></label>
-        </fieldset>
-        <fieldset>
-          <legend>Цвет</legend>
-          <ul class="sort-color">
-            <li>
-              <input type="checkbox" name="black" id="black" checked>
-              <label for="black">Черный</label>
-            </li>
-            <li>
-              <input type="checkbox" name="white" id="white">
-              <label for="white">Белый</label>
-            </li>
-            <li>
-              <input type="checkbox" name="blue" id="blue" checked>
-              <label for="blue">Синий</label>
-            </li>
-            <li>
-              <input type="checkbox" name="red" id="red" checked>
-              <label for="red">Красный</label>
-            </li>
-            <li>
-              <input type="checkbox" name="pink" id="pink">
-              <label for="pink">Розовый</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Bluetooth</legend>
-          <ul class="sort-bluetooth">
-            <li>
-              <input type="radio" name="bluetooth" id="included" value="included" checked>
-              <label for="included">Есть</label>
-            </li>
-            <li>
-              <input type="radio" name="bluetooth" id="not-included" value="not-included">
-              <label for="not-included">Нет</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit" class="main-button">Показать</button>
-      </form>
+      <section class="filter">
+        <h2>Фильтр:</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-price">
+            <legend>Стоимость</legend>
+            <div class="price-range-bg"></div>
+            <div class="price-range-bar-empty"></div>
+            <div class="price-range-bar-full"></div>
+            <label>от <input type="number" class="custom-min-price" value="0"></label>
+            <label>до <input type="number" class=custom-max-price" value="5000"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul class="filter-color">
+              <li>
+                <input type="checkbox" name="black" id="black" checked>
+                <label for="black">Черный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="white" id="white">
+                <label for="white">Белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="blue" id="blue" checked>
+                <label for="blue">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" name="red" id="red" checked>
+                <label for="red">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul class="filter-bluetooth">
+              <li>
+                <input type="radio" name="bluetooth" id="included" value="included" checked>
+                <label for="included">Есть</label>
+              </li>
+              <li>
+                <input type="radio" name="bluetooth" id="not-included" value="not-included">
+                <label for="not-included">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="main-button">Показать</button>
+        </form>
+      </section>
+      <section class="sort">
+        <h2>Сортировка:</h2>
+        <ul>
+          <li><a href="#" class="sort-by sort-current">По цене</a></li>
+          <li><a href="#" class="sort-by">По типу</a></li>
+          <li><a href="#" class="sort-by">По популярности</a></li>
+        </ul>
+        <a href="#" class="sort-direction">От меньшего к большему</a>
+        <a href="#" class="sort-direction dir-current">От большего к меньшему</a>
+      </section>
       <section class="items">
         <h2 class="visually-hidden">Список товаров</h2>
         <section class="device">
@@ -166,8 +185,8 @@
         <ul>
           <li><a class="back disabled">Назад</a></li>
           <li><a class="active-page">1</a></li>
-          <li><a class="" href="#">2</a></li>
-          <li><a class="" href="#">3</a></li>
+          <li><a class="page" href="#">2</a></li>
+          <li><a class="page" href="#">3</a></li>
           <li><a class="forward" href="#">Вперед</a></li>
         </ul>
       </div>
