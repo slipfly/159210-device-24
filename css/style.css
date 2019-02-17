@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans";
   src: url("../fonts/web/opensanslight.woff2") format("woff2"),
        url("../fonts/web/opensanslight.woff") format("woff");
   font-weight: 300;
@@ -13,14 +13,14 @@
 }
 
 @font-face {
-  font-family: "Gilroy Light";
+  font-family: "Gilroy";
   src: url("../fonts/web/gilroylight.woff2") format("woff2"),
       url("../fonts/web/gilroylight.woff") format("woff");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy";
   src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"),
       url("../fonts/web/gilroyextrabold.woff") format("woff");
   font-weight: 800;
