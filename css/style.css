@@ -82,11 +82,11 @@ button {
 }
 
 .inner-row1 {
-  background-image: linear-gradient(to right, #dcdcdc 37%, #ebebeb 37%);;
+  background-image: linear-gradient(to right, #dcdcdc 50%, #ebebeb 50%);;
 }
 
 .inner-row2 {
-  background-image: linear-gradient(to right, #ebebeb 37%, #ffffff 37%);;
+  background-image: linear-gradient(to right, #ebebeb 50%, #ffffff 50%);;
 }
 
 .inner-container {
@@ -99,12 +99,28 @@ button {
 
 .inner-col1 {
   width: 270px;
-  margin-right: 70px;
   padding-left: 60px;
+}
+
+.inner-row1 .inner-col1 {
+  background-color: #dcdcdc;
+}
+
+.inner-row2 .inner-col1 {
+  background-color: #ebebeb;
 }
 
 .inner-col2 {
   width: 760px;
+  padding-left: 70px;
+}
+
+.inner-row1 .inner-col2 {
+  background-color: #ebebeb;
+}
+
+.inner-row2 .inner-col2 {
+  background-color: #ffffff;
 }
 
 /*.inner-page .main-container {*/
@@ -188,6 +204,7 @@ button {
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
+  width: 500px;
 }
 
 .index-sub-menu li {
@@ -217,9 +234,13 @@ button {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-navigation form {
+.searching {
   width: 440px;
-  margin-right: 100px;
+  margin-right: auto;
+}
+
+.header-container {
+  display: flex;
 }
 
 .search-field {
@@ -227,7 +248,7 @@ button {
   padding-bottom: 18px;
   padding-top: 5px;
   padding-left: 40px;
-  margin-right: -3px;
+  margin-right: -5px;
   vertical-align: top;
 
   color: #000000;
@@ -321,22 +342,41 @@ button {
   padding-left: 25px;
 }
 
-.user-navigation .logout-link {
-  margin-left: 20px;
+.user-navigation li {
+  margin-left: 40px;
 }
+
+/* .user-navigation .logout-link {
+  margin-left: 20px;
+} */
 
 .compare-btn {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
-  margin-left: 65px;
+  /* margin-left: 65px; */
 }
 
 .cart-btn {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 25px;
-  margin-left: 40px;
+  /* margin-left: 40px; */
+}
+
+#login-link {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+#logout-link {
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+#account-link {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .promo-slide h3 {
@@ -426,7 +466,7 @@ button {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
   font-size: 36px;
-  line-height: 48px
+  line-height: 48px;
   text-align: left;
 }
 
@@ -452,7 +492,7 @@ button {
   margin-top: 65px;
 }
 
-#slide1 .slider-img {
+slide1 .slider-img {
   margin-left: 110px;
   margin-right: 125px;
 }
@@ -495,7 +535,6 @@ button {
 
 .popular-itemgroups-list {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 185px;
   padding: 0;
 
@@ -504,11 +543,16 @@ button {
 
 .popular-itemgroups-list li {
   width: 160px;
+  margin-right: 40px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+}
+
+.popular-itemgroups-list li:last-child {
+  margin-right: 0;
 }
 
 .popular-itemgroups-list a {
@@ -521,6 +565,8 @@ button {
 
 .services-button {
   width: 160px;
+  margin-bottom: 25px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -551,7 +597,6 @@ button {
 .services-btns {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 70px;
   margin-right: 120px;
@@ -580,8 +625,15 @@ button {
 
 .brands {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 95px;
+}
+
+.brands a {
+  margin-right: 40px;
+}
+
+.brands a:last-child {
+  margin-right: 0;
 }
 
 .brands img {
@@ -657,8 +709,13 @@ button {
   margin-bottom: 40px;
 }
 
-.contacts img {
+.contacts-map {
+  display: block;
   margin-bottom: 80px;
+}
+
+.contacts-map img {
+  display: block;
 }
 
 .feedback-btn {
@@ -1056,15 +1113,20 @@ button {
   padding: 0;
 }
 
-.footer-address {
-  margin-right: 163px;
+.footer-address,
+.footer-phone {
   width: 205px;
+}
+
+.footer-phone {
+  text-align: right;
 }
 
 .footer-site-navigation {
   display: flex;
   width: 425px;
   margin-right: auto;
+  margin-left: auto;
   justify-content: space-between;
 }
 
@@ -1100,11 +1162,12 @@ button {
 .footer-social {
   width: 160px;
   margin-left: auto;
+  margin-right: auto;
+  padding-left: 27px;
 }
 
 .footer-copyright {
   width: 27px;
-  margin-left: 473px;
 }
 
 .modal-content-feedback {

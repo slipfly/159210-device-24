@@ -12,19 +12,19 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" alt="Логотип магазина Device" width="163" height="35">
         </a>
-        <ul class="user-navigation">
-          <li>
-            <form class="searching" action="https://echo.htmlacademy.ru" method="get">
-              <label class="search-icon visually-hidden" for="search-field">Поиск</label>
-              <input type="text" class="search-field" id="search-field" placeholder="Поиск по сайту">
-              <button type="submit" class="search-btn">Найти</button>
-            </form>
-          </li>
-          <li><a class="account-link" href="#">Валентин Петухов</a></li>
-          <li><a class="logout-link" href="#">Выйти</a></li>
-          <li><a class="compare-btn" href="#">Сравнить</a></li>
-          <li><a class="cart-btn" href="#">Корзина</a></li>
-        </ul>
+        <div class="header-container">
+          <form class="searching" action="https://echo.htmlacademy.ru" method="get">
+            <label class="search-icon visually-hidden" for="search-field">Поиск</label>
+            <input type="text" class="search-field" id="search-field" placeholder="Поиск по сайту">
+            <button type="submit" class="search-btn">Найти</button>
+          </form>
+          <ul class="user-navigation">
+            <li id="account-link"><a class="account-link" href="#">Валентин Петухов</a></li>
+            <li id="logout-link"><a class="logout-link" href="#">Выйти</a></li>
+            <li><a class="compare-btn" href="#">Сравнить</a></li>
+            <li><a class="cart-btn" href="#">Корзина</a></li>
+          </ul>
+        </div>
         <ul class="site-navigation">
           <li class="open-item-list-btn"><a href="#">Каталог товаров</a>
             <div class="sub-menu-container">
