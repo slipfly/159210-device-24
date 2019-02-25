@@ -1123,7 +1123,8 @@ button {
 }
 
 .footer-social {
-  width: 160px;
+  display: flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   padding-left: 27px;
