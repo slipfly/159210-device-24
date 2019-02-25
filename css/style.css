@@ -123,14 +123,6 @@ button {
   background-color: #ffffff;
 }
 
-/*.inner-page .main-container {*/
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
-  /*width: 1040px;*/
-  /*padding-left: 60px;*/
-  /*padding-right: 60px;*/
-/*}*/
-
 .main-header {
   display: flex;
   width: 1040px;
@@ -306,10 +298,6 @@ button {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.user-navigation .login-link {
-  margin-right: 150px;
-}
-
 .search-btn {
   padding-top: 10px;
   padding-bottom: 11px;
@@ -334,47 +322,31 @@ button {
   background-color: #000000;
 }
 
-.login-link {
-  padding-left: 27px;
-}
-
-.user-navigation .account-link {
-  padding-left: 25px;
-}
-
-.user-navigation li {
+.user-navigation li,
+.footer-user-navigation li {
   margin-left: 40px;
+  padding-left: 25px
 }
 
-/* .user-navigation .logout-link {
-  margin-left: 20px;
-} */
-
-.compare-btn {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  /* margin-left: 65px; */
+.user-navigation li:first-of-type,
+.footer-user-navigation li:first-of-type {
+  margin-right: 20px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-.cart-btn {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-  /* margin-left: 40px; */
-}
-
-#login-link {
+.user-navigation li:nth-last-of-type(3),
+.footer-user-navigation li:nth-last-of-type(3) {
+  padding-left: 0;
   margin-left: 0;
   margin-right: auto;
 }
 
-#logout-link {
-  margin-left: 20px;
-  margin-right: auto;
-}
-
-#account-link {
+.user-navigation .account-link,
+.user-navigation .login-link,
+.footer-user-navigation .account-link,
+.footer-user-navigation .login-link {
+  padding-left: 25px;
   margin-left: 0;
   margin-right: 0;
 }
@@ -492,44 +464,44 @@ button {
   margin-top: 65px;
 }
 
-slide1 .slider-img {
+.slide1 .slider-img {
   margin-left: 110px;
   margin-right: 125px;
 }
 
-#slide1 h3 {
+.slide1 h3 {
   width: 400px;
 }
 
-#slide1 p {
+.slide1 p {
   width: 500px;
 }
 
-#slide2 .slider-img {
+.slide2 .slider-img {
   margin-left: 90px;
   margin-top: 12px;
   margin-right: 140px;
 }
 
-#slide2 h3 {
+.slide2 h3 {
   width: 260px;
 }
 
-#slide2 p {
+.slide2 p {
   width: 460px;
 }
 
-#slide3 .slider-img {
+.slide3 .slider-img {
   margin-left: 32px;
   margin-top: 10px;
   margin-right: 40px;
 }
 
-#slide3 h3 {
+.slide3 h3 {
   width: 500px;
 }
 
-#slide3 p {
+.slide3 p {
   width: 460px;
 }
 
@@ -1079,12 +1051,7 @@ slide1 .slider-img {
   padding: 0;
 }
 
-.footer-user-navigation .account-link {
-  padding-left: 30px;
-}
-
 .footer-user-navigation .logout-link {
-  margin-left: 20px;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1095,10 +1062,6 @@ slide1 .slider-img {
 
 .footer-user-navigation .logout-link:active {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-user-navigation .compare-btn {
-  margin-left: 45px;
 }
 
 .footer-user-navigation,
