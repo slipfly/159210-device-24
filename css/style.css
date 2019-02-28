@@ -369,7 +369,6 @@ input[type="radio"].visually-hidden {
 .user-navigation li,
 .footer-user-navigation li {
   margin-left: 40px;
-  padding-left: 25px
 }
 
 .user-navigation li:first-of-type,
@@ -390,9 +389,40 @@ input[type="radio"].visually-hidden {
 .user-navigation .login-link,
 .footer-user-navigation .account-link,
 .footer-user-navigation .login-link {
-  padding-left: 25px;
   margin-left: 0;
   margin-right: 0;
+}
+
+.login-link,
+.account-link,
+.compare-btn,
+.cart-btn {
+  position: relative;
+  padding-left: 25px;
+}
+
+.compare-btn::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/compare.svg");
+  background-repeat: no-repeat;
+}
+
+.cart-btn::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
 }
 
 .open-item-list-btn {
@@ -1355,6 +1385,7 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   justify-content: space-between;
   padding-top: 2px;
+  margin-bottom: 25px;
 }
 
 .footer-site-navigation a {
@@ -1388,14 +1419,57 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
   display: flex;
+  position: relative;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   padding-left: 27px;
 }
 
+.footer-social::before {
+  content: "";
+  position: absolute;
+  left: -482px;
+  top: 28px;
+  width: 80px;
+  height: 7px;
+  background-color: #f0c52e;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 141px;
+  padding: 0;
+  list-style: none;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  opacity: 0.6;
+}
+
+.social-btn:active {
+  opacity: 0.1;
+}
+
 .footer-copyright {
   width: 27px;
+  padding-top: 13px;
+}
+
+.footer-copyright svg {
+  fill: #f0c52e;
 }
 
 .modal-content-feedback {
