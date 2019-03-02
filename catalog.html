@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header inner-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" alt="Логотип магазина Device" width="163" height="35">
@@ -19,10 +19,45 @@
             <button type="submit" class="search-btn">Найти</button>
           </form>
           <ul class="user-navigation">
-            <li id="account-link"><a class="account-link" href="#">Валентин Петухов</a></li>
+            <li id="account-link">
+              <a class="account-link" href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+                  <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+                	C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"></path>
+                </svg>
+                Валентин Петухов
+              </a>
+            </li>
             <li id="logout-link"><a class="logout-link" href="#">Выйти</a></li>
-            <li><a class="compare-btn" href="#">Сравнить</a></li>
-            <li><a class="cart-btn" href="#">Корзина</a></li>
+            <li>
+              <a class="compare-btn" href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+                  <rect x="8" y="2" width="1.984" height="8"></rect>
+                  <rect y="3" width="1.984" height="7"></rect>
+                  <rect x="4" width="2" height="10"></rect>
+                </svg>
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a class="cart-btn" href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+                  <g>
+                    <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
+                      c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
+                      c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
+                      c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"></path>
+                    <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
+                      c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
+                      C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"></path>
+                  </g>
+                </svg>
+                Корзина
+              </a>
+            </li>
           </ul>
         </div>
         <ul class="site-navigation">
@@ -92,8 +127,8 @@
                 <li><a href="#" class="sort-by">По типу</a></li>
                 <li><a href="#" class="sort-by">По популярности</a></li>
               </ul>
-              <a href="#" class="sort-direction">От меньшего к большему</a>
-              <a href="#" class="sort-direction dir-current">От большего к меньшему</a>
+              <a href="#" class="sort-direction"><span class="visually-hidden">От меньшего к большему</span></a>
+              <a href="#" class="sort-direction dir-current"><span class="visually-hidden">От большего к меньшему</span></a>
             </section>
           </div>
         </div>
@@ -107,9 +142,12 @@
               <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="filter-price">
                   <legend>Стоимость</legend>
-                  <div class="price-range-bg"></div>
-                  <div class="price-range-bar-empty"></div>
-                  <div class="price-range-bar-full"></div>
+                  <div class="price-bar">
+                    <div class="price-range-bar-empty"></div>
+                    <div class="price-range-bar-full"></div>
+                    <div class="price-start"></div>
+                    <div class="price-end"></div>
+                  </div>
                   <label>от <input type="number" class="custom-min-price" value="0"></label>
                   <label>до <input type="number" class=custom-max-price" value="5000"></label>
                 </fieldset>
@@ -117,23 +155,23 @@
                   <legend>Цвет</legend>
                   <ul class="filter-color">
                     <li>
-                      <input type="checkbox" name="black" id="black" checked>
+                      <input class="visually-hidden" type="checkbox" name="black" id="black" checked>
                       <label for="black">Черный</label>
                     </li>
                     <li>
-                      <input type="checkbox" name="white" id="white">
+                      <input class="visually-hidden" type="checkbox" name="white" id="white">
                       <label for="white">Белый</label>
                     </li>
                     <li>
-                      <input type="checkbox" name="blue" id="blue" checked>
+                      <input class="visually-hidden" type="checkbox" name="blue" id="blue" checked>
                       <label for="blue">Синий</label>
                     </li>
                     <li>
-                      <input type="checkbox" name="red" id="red" checked>
+                      <input class="visually-hidden" type="checkbox" name="red" id="red" checked>
                       <label for="red">Красный</label>
                     </li>
                     <li>
-                      <input type="checkbox" name="pink" id="pink">
+                      <input class="visually-hidden" type="checkbox" name="pink" id="pink">
                       <label for="pink">Розовый</label>
                     </li>
                   </ul>
@@ -142,11 +180,11 @@
                   <legend>Bluetooth</legend>
                   <ul class="filter-bluetooth">
                     <li>
-                      <input type="radio" name="bluetooth" id="included" value="included" checked>
+                      <input class="visually-hidden" type="radio" name="bluetooth" id="included" value="included" checked>
                       <label for="included">Есть</label>
                     </li>
                     <li>
-                      <input type="radio" name="bluetooth" id="not-included" value="not-included">
+                      <input class="visually-hidden" type="radio" name="bluetooth" id="not-included" value="not-included">
                       <label for="not-included">Нет</label>
                     </li>
                   </ul>
@@ -220,14 +258,56 @@
     <footer class="main-footer">
       <div class="main-container">
         <div class="footer-container">
-          <a class="main-footer-logo" href="index.html">
-            <img src="img/logo.svg" alt="Логотип магазина Device" width="163" height="35">
+          <a class="main-footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
+              <defs>
+                <style>
+                  .cls-1{fill-rule:evenodd}
+                </style>
+              </defs>
+              <path id="_-e-logo" d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"></path>
+            </svg>
           </a>
           <ul class="footer-user-navigation">
-            <li><a class="account-link" href="#">Валентин Петухов</a></li>
+            <li>
+              <a class="account-link" href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+                  <path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+                	C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"></path>
+                </svg>
+                Валентин Петухов
+              </a>
+            </li>
             <li><a class="logout-link" href="#">Выйти</a></li>
-            <li><a class="compare-btn" href="#">Сравнить</a></li>
-            <li><a class="cart-btn" href="#">Корзина</a></li>
+            <li>
+              <a class="compare-btn" href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+                  <rect x="8" y="2" width="1.984" height="8"></rect>
+                  <rect y="3" width="1.984" height="7"></rect>
+                  <rect x="4" width="2" height="10"></rect>
+                </svg>
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a class="cart-btn" href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
+                  <g>
+                    <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
+                      c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438
+                      c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595
+                      c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"></path>
+                    <path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079
+                      c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84
+                      C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"></path>
+                  </g>
+                </svg>
+                Корзина
+              </a>
+            </li>
           </ul>
         </div>
         <div class="footer-container">
@@ -242,17 +322,36 @@
         <div class="footer-container">
           <section class="footer-social">
             <h2 class="visually-hidden">Device в социальных сетях</h2>
-            <a class="social-btn social-btn-fb" href="#">Device на Фейсбуке</a>
-            <a class="social-btn social-btn-inst" href="#">Device в Инстаграм</a>
-            <a class="social-btn social-btn-tw" href="#">Device в Твиттере</a>
+            <ul>
+              <li>
+                <a class="social-btn social-btn-fb" href="#">
+                  <img src="img/fb.svg" alt="Device на Фейсбуке" width="32" height="32">
+                </a>
+              </li>
+              <li>
+                <a class="social-btn social-btn-inst" href="#">
+                  <img src="img/insta.svg" alt="Device в Инстаграм" width="32" height="32">
+                </a>
+              </li>
+              <li>
+                <a class="social-btn social-btn-tw" href="#">
+                  <img src="img/twitter.svg" alt="Device в Твиттере" width="32" height="32">
+                </a>
+              </li>
+            </ul>
           </section>
           <section class="footer-copyright">
             <h2 class="visually-hidden">Сайт разработан</h2>
-            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+            <a class="btn" href="https://htmlacademy.ru">
+              <span class="visually-hidden">HTML Academy</span>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"></path>
+              </svg>
+            </a>
           </section>
         </div>
       </div>
-
     </footer>
+
   </body>
 </html>
