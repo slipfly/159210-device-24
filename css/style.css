@@ -565,14 +565,16 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.47px;
 }
 
-.promo-slider li:not(.slide-current) {
+/* .promo-slider li:not(.slide-current) {
   display: none;
-}
+} */
+
+
 
 .slider-controls {
   position: absolute;
   top: 325px;
-  right: -610px;
+  right: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,6 +630,12 @@ input[type="radio"].visually-hidden {
   letter-spacing: 1.79px;
   z-index: -1;
   color: #ffffff;
+
+  opacity: 0;
+}
+
+.promo-slide.slide-current::after {
+  opacity: 1;
 }
 
 /*.slide2 .slider-info::after {*/
@@ -677,7 +685,14 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 0;
   padding: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.promo-slide.slide-current {
+  max-height: 506px;
   margin-bottom: 95px;
 }
 
