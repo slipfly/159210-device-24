@@ -385,6 +385,8 @@ input[type="radio"].visually-hidden {
   background-color: #F7E397;
 
   border: 2px solid #000000;
+
+  transition: 0.2s;
 }
 
 .search-field:focus + .search-btn {
@@ -525,19 +527,27 @@ input[type="radio"].visually-hidden {
   -webkit-background-size: 100% 8px;
   background-size: 100% 8px;
   background-position: center;
+
+  transition: 0.1s;
 }
 
 .main-button:hover,
 .main-button:focus {
   color: #000000;
-  background-color: #f0c52e;
-  background-image: none;
+  /*background-color: #f0c52e;*/
+  /*background-image: none;*/
+
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .main-button:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: #f0c52e;
-  background-image: none;
+  /*background-color: #f0c52e;*/
+  /*background-image: none;*/
+
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .promo-slider {
@@ -824,6 +834,7 @@ input[type="radio"].visually-hidden {
   height: 160px;
   background-color: #F7E397;
   background-repeat: no-repeat;
+  transition: 0.2s;
 }
 
 .popular-itemgroups-link:hover::before,
@@ -1036,6 +1047,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.2;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  transition: 0.2s;
 }
 
 .brands img:hover,
@@ -1872,6 +1884,7 @@ input[type="radio"]:checked + label::after{
   width: 32px;
   height: 32px;
   opacity: 0.3;
+  transition: 0.2s;
 }
 
 .social-btn:hover,
