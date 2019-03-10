@@ -758,7 +758,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide1 h3 {
-  width: 400px;
+  width: 410px;
 }
 
 .slide1 p {
@@ -1043,19 +1043,48 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-.brands img {
-  opacity: 0.2;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  transition: 0.2s;
+.brands-logo {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 260px; /* Width of new image */
+  height: 100px; /* Height of new image */
+  padding-left: 260px; /* Equal to width of new image */
 }
 
-.brands img:hover,
-.brands img:focus {
-  opacity: 1;
-  -webkit-filter: none;
-  filter: none;
+.logo-1 {
+  background: url("../img/logo-1-gray.jpg") no-repeat;
 }
+
+.logo-2 {
+  background: url("../img/logo-2-gray.jpg") no-repeat;
+}
+
+.logo-3 {
+  background: url("../img/logo-3-gray.jpg") no-repeat;
+}
+
+.logo-4 {
+  background: url("../img/logo-4-gray.jpg") no-repeat;
+}
+
+.brands-logo:hover {
+  padding-left: 0;
+}
+
+/*.brands img {*/
+  /*opacity: 0.2;*/
+  /*-webkit-filter: grayscale(100%);*/
+  /*filter: grayscale(100%);*/
+  /*transition: 0.2s;*/
+/*}*/
+
+/*.brands img:hover,*/
+/*.brands img:focus {*/
+  /*opacity: 1;*/
+  /*-webkit-filter: none;*/
+  /*filter: none;*/
+/*}*/
 
 .informtion {
   display: -webkit-box;
@@ -1377,6 +1406,15 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 input[type="checkbox"]:checked + label::before{
   border: none;
   width: 27px;
@@ -1385,7 +1423,12 @@ input[type="checkbox"]:checked + label::before{
   background-repeat: no-repeat;
 }
 
-input[type="radio"]:checked + label::after{
+input[type="checkbox"]:focus + label::before,
+input[type="radio"]:focus + label::before {
+  outline: 2px solid #9cbef5;
+}
+
+input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -1784,7 +1827,7 @@ input[type="radio"]:checked + label::after{
 
 .footer-address,
 .footer-phone {
-  width: 205px;
+  width: 215px;
 }
 
 .footer-phone {
