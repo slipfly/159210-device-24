@@ -494,6 +494,7 @@ input[type="radio"].visually-hidden {
 
 .open-item-list-btn:hover .sub-menu-container,
 .open-item-list-link:hover + .sub-menu-container,
+.open-item-list-btn>a:hover + .sub-menu-container,
 .open-item-list-btn:focus-within .sub-menu-container {
   opacity: 1;
   pointer-events: auto;
