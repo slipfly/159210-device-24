@@ -294,8 +294,9 @@ input[type="radio"].visually-hidden {
 
 .search-field {
   width: 280px;
-  padding-bottom: 18px;
-  padding-top: 5px;
+  height: 34px;
+  /*padding-bottom: 18px;*/
+  /*padding-top: 5px;*/
   padding-left: 35px;
   margin-right: -5px;
   vertical-align: top;
@@ -377,8 +378,9 @@ input[type="radio"].visually-hidden {
 
 .search-btn {
   visibility: hidden;
-  padding-top: 10px;
-  padding-bottom: 11px;
+  height: 38px;
+  /*padding-top: 10px;*/
+  /*padding-bottom: 11px;*/
   padding-left: 20px;
   padding-right: 20px;
 
@@ -925,6 +927,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 3.6px;
 }
 
+.services-current:focus,
 .services-current {
   width: 100%;
   color: #F7E397;
