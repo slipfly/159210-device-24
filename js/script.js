@@ -56,8 +56,6 @@ mapClose.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
 
-
-  console.log('user = '+username.value+'; email = '+email.value+'; msg = '+message.value);
   if (!username.value || !email.value || !message.value) {
     evt.preventDefault();
     feedbackModal.classList.remove("modal-error");
