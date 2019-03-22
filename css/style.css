@@ -302,7 +302,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 16px;
   height: 16px;
-  background-image: url(../img/search.svg);
+  background-image: url("../img/search.svg");
   background-repeat: no-repeat;
 }
 
@@ -551,7 +551,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  top: 325px;
+  bottom: 250px;
   right: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -655,7 +655,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slide.slide-current {
-  max-height: 506px;
+  max-height: 100%;
   margin-bottom: 95px;
 }
 
